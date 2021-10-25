@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <title>Chiado Terrasse</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link type="text/css" href="./css/chiadoTerrasse.css" rel="stylesheet">
+    <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="application/javascript" src="./js/chiadoTerrasse.js"></script>
+    <script type="application/javascript" src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script type="application/javascript" src="./js/popper.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+</head>
+
+<body id="fundoPg">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light backgoundNavbar">
+        <a class="navbar-brand" href="#"><img class="logo img-fluid" src="source/logoT.png" alt="logoCT"></a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="navbar dropdown menuBtn">MENU<br>Click</button>
+                </a>
+                <div class="dropdown-menu bgMenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt1" class="btnMenu" onclick="entrada()">
+                            <p class="textItensMenu">Entradas . Starters</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt2" class="btnMenu" onclick="carne()">
+                            <p class="textItensMenu">Carne . Steak</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt3" class="btnMenu" onclick="peixe()">
+                            <p class="textItensMenu">Peixe . Fish</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt4" class="btnMenu" onclick="massas()">
+                            <p class="textItensMenu">Massas . Pastas</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt5" class="btnMenu" onclick="crepes()">
+                            <p class="textItensMenu">Crepes</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt6" class="btnMenu" onclick="omeletes()">
+                            <p class="textItensMenu">Omeletes</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt7" class="btnMenu" onclick="saladas()">
+                            <p class="textItensMenu">Saladas . Salads</p>
+                        </button>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt8" class="btnMenu" onclick="tostas()">
+                            <p class="textItensMenu">Tostas . Toasts</p>
+                        </button>
+                    </a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt9" class="btnMenu" onclick="sobremesas()">
+                            <p class="textItensMenu">Sobremesas . Desserts</p>
+                        </button>
+                    </a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="#">
+                        <button type="button" id="bt10" class="btnMenu" onclick="bebidas()">
+                            <p class="textItensMenu">Bebidas . Drinks</p>
+                        </button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="col-sm-12 col-md-12">
+        <img id="mEntradas" class="menuImg img-fluid" src="source/entradas.png" alt="mEntradas">
+
+        <img id="mCarnes" class="menuImg img-fluid" src="source/carne.png" alt="mCarnes">
+
+        <img id="mPeixe" class="menuImg img-fluid" src="source/peixe.png" alt="mPeixe">
+
+        <img id="mMassa" class="menuImg img-fluid" src="source/massas.png" alt="mMassas">
+
+        <img id="mCrepes" class="menuImg img-fluid" src="source/crepes.png" alt="mCrepes">
+
+        <img id="mOmeletes" class="menuImg img-fluid" src="source/omeletes.png" alt="mOmeletes">
+
+        <img id="mSaladas" class="menuImg img-fluid" src="source/saladas.png" alt="mSaladas">
+
+        <img id="mTostas" class="menuImg img-fluid" src="source/tostas.png" alt="mTostas">
+
+        <img id="mSobremesa1" class="menuImg img-fluid" src="source/gelados.png" alt="mSobremesa1">
+        <br id="s1">
+        <img id="mSobremesa2" class="menuImg img-fluid" src="source/waffles.png" alt="mSobremesa2">
+        <br id="s2">
+        <img id="mSobremesa3" class="menuImg img-fluid" src="source/crepesDoce.png" alt="mSobremesa3">
+        <br id="s3">
+        <img id="mSobremesa4" class="menuImg img-fluid" src="source/bolos.png" alt="mSobremesa4">
+
+        <img id="mBebidas3" class="menuImg img-fluid" src="source/vinhos.png" alt="mBebidas3">
+        <br id="b1">
+        <img id="mBebidas2" class="menuImg img-fluid" src="source/bebidasGeral.png" alt="mBebidas2">
+        <br id="b2">
+        <img id="mBebidas4" class="menuImg img-fluid" src="source/cocktails.png" alt="mBebidas4">
+        <br id="b3">
+        <img id="mBebidas1" class="menuImg img-fluid" src="source/cafeteria.png" alt="mBebidas1">
+
+        <button id="btnClose" class="btnClose" onclick="closeImg()">X</button>
+    </div>
+
+    <img id="fotoFundo" class="fotoFundoPg img-fluid" src="source/capa.png" alt="capa">
+
+    <footer id="initAss">
+        <p class="ff card-footer">&copy; Chiado Terrasse</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
